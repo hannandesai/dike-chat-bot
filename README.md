@@ -1,163 +1,105 @@
-# [Light Bootstrap Dashboard Angular CLI](http://lbd-angular2.creative-tim.com/)
-[![version][version-badge]][CHANGELOG]
+# ChatBot for Recruitment
 
-![alt text](src/assets/img/opt_lbd_angular_thumbnail.jpg)
+This project focuses on developing a **ChatBot for Recruitment**, a MEAN stack web application designed to automate the employee recruitment process. It streamlines interview-related tasks for medium to large-scale companies using AI-driven solutions.
 
-**[Light-Bootstrap-Dashboard-Angular-CLI](http://lbd-angular2.creative-tim.com/)** is an admin dashboard template designed to be beautiful and simple. It is built on top of Bootstrap 3, using [Light Bootstrap Dashboard](https://www.creative-tim.com/product/light-bootstrap-dashboard2) and it is fully responsive. It comes with a big collections of elements that will offer you multiple possibilities to create the app that best fits your needs. It can be used to create admin panels, project management systems, web applications backend, CMS or CRM.
+---
 
-The product represents a big suite of front-end developer tools that can help you jump start your project. We have created it thinking about things you actually need in a dashboard. Light Bootstrap Dashboard Angular 2 contains multiple handpicked and optimized plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customization of this product.
+## Project Overview
 
-It comes with 6 filter colors for the sidebar (“black”, “azure”,”green”,”orange”,”red”,”purple”) and an option to have a background image.
+### Purpose
+The chatbot automates initial recruitment processes, minimizing human interaction and enabling simultaneous interviews. It evaluates candidates using AI concepts like pattern recognition and keyword analysis, providing rankings to assist in decision-making.
 
-Special thanks go to: Robert McIntosh for the notification system Chartist for the wonderful charts We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+### Scope
+- **Interview Management**: Organizes and manages candidate entries.
+- **Automated Interviews**: Conducts multiple interviews simultaneously.
+- **Candidate Evaluation**: Judges and rates candidates for suitability.
+- **Review and Verdict**: Allows admins to review interviews, accept/reject candidates, and send automated notifications.
 
-## Links:
+---
 
-+ [Live Preview](http://lbd-angular2.creative-tim.com/)
-+ [Light Bootstrap Dashboard PRO Angular CLI](https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2/?ref=lbd-angular-cli-free-github) ($49)
+## Features
 
-## Quick Start:
+1. **Dynamic Interview IDs**: Generates unique IDs for interview sessions.
+2. **Randomized Question Selection**: Selects 15 questions from a pre-defined pool.
+3. **AI-Based Evaluation**: Uses pattern recognition and keyword analysis for ranking.
+4. **Admin Dashboard**:
+   - View interview results.
+   - Review candidate interviews and resumes.
+   - Manage interview questions and system keywords.
+5. **Candidate Verdict**: Provides options to hire, reject, or schedule further interviews.
 
-Quick start options:
+---
 
-+ [Download from Github](https://github.com/creativetimofficial/light-bootstrap-dashboard-angular/archive/master.zip).
-+ [Download from Creative Tim](https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2).
-+ Clone the repo: `git clone https://github.com/creativetimofficial/light-bootstrap-dashboard-angular.git`.
+## Technologies Used
 
-## Terminal Commands
+- **Frontend**: AngularJS, HTML, CSS
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Development Tools**: Visual Studio Code
+- **Architecture**: MEAN Stack
 
-1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
-2. Open Terminal
-3. Go to your file project
-4. Run in terminal: ```npm install -g @angular/cli```
-5. Then: ```npm install```
-6. And: ```ng serve```
-7. Navigate to `http://localhost:4200/`
+---
 
-### What's included
+## System Requirements
 
-Within the download you'll find the following directories and files:
-```
-light-bootstrap-dashboard-angular-cli
-├── README.md
-├── angular-cli.json
-├── documentation
-│   ├── css
-│   ├── js
-│   └── tutorial-lbd-angular2.html
-├── e2e
-├── karma.conf.js
-├── package.json
-├── protractor.conf.js
-├── src
-│   ├── app
-│   │   ├── app.component.css
-│   │   ├── app.component.html
-│   │   ├── app.component.spec.ts
-│   │   ├── app.component.ts
-│   │   ├── app.module.ts
-│   │   ├── app.routing.ts
-│   │   ├── home
-│   │   │   ├── home.component.css
-│   │   │   ├── home.component.html
-│   │   │   ├── home.component.spec.ts
-│   │   │   └── home.component.ts
-│   │   ├── icons
-│   │   │   ├── icons.component.css
-│   │   │   ├── icons.component.html
-│   │   │   ├── icons.component.spec.ts
-│   │   │   └── icons.component.ts
-│   │   ├── lbd
-│   │   │   ├── lbd-chart
-│   │   │   │   ├── lbd-chart.component.html
-│   │   │   │   └── lbd-chart.component.ts
-│   │   │   └── lbd.module.ts
-│   │   ├── maps
-│   │   │   ├── maps.component.css
-│   │   │   ├── maps.component.html
-│   │   │   ├── maps.component.spec.ts
-│   │   │   └── maps.component.ts
-│   │   ├── notifications
-│   │   │   ├── notifications.component.css
-│   │   │   ├── notifications.component.html
-│   │   │   ├── notifications.component.spec.ts
-│   │   │   └── notifications.component.ts
-│   │   ├── shared
-│   │   │   ├── footer
-│   │   │   │   ├── footer.component.html
-│   │   │   │   ├── footer.component.ts
-│   │   │   │   └── footer.module.ts
-│   │   │   └── navbar
-│   │   │       ├── navbar.component.html
-│   │   │       ├── navbar.component.ts
-│   │   │       └── navbar.module.ts
-│   │   ├── sidebar
-│   │   │   ├── sidebar.component.html
-│   │   │   ├── sidebar.component.ts
-│   │   │   └── sidebar.module.ts
-│   │   ├── tables
-│   │   │   ├── tables.component.css
-│   │   │   ├── tables.component.html
-│   │   │   ├── tables.component.spec.ts
-│   │   │   └── tables.component.ts
-│   │   ├── typography
-│   │   │   ├── typography.component.css
-│   │   │   ├── typography.component.html
-│   │   │   ├── typography.component.spec.ts
-│   │   │   └── typography.component.ts
-│   │   ├── upgrade
-│   │   │   ├── upgrade.component.css
-│   │   │   ├── upgrade.component.html
-│   │   │   ├── upgrade.component.spec.ts
-│   │   │   └── upgrade.component.ts
-│   │   └── user
-│   │       ├── user.component.css
-│   │       ├── user.component.html
-│   │       ├── user.component.spec.ts
-│   │       └── user.component.ts
-│   ├── assets
-│   │   ├── css
-│   │   ├── fonts
-│   │   ├── img
-│   │   └── sass
-│   │       ├── lbd
-│   │       └── light-bootstrap-dashboard.scss
-│   ├── environments
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── main.ts
-│   ├── polyfills.ts
-│   ├── styles.css
-│   ├── test.ts
-│   └── tsconfig.json
-├── tslint.json
-└── typings.json
+### Hardware
+- Intel i5 5th Gen 2.20GHz or higher
+- 8 GB RAM
+- 4 Mbps or faster internet connection
 
-```
-## Useful Links
+### Software
+- Windows 10 or Ubuntu 14.0
+- Chrome/Mozilla Firefox
+- Visual Studio Code
 
-More products from Creative Tim: <https://www.creative-tim.com/bootstrap-themes>
+---
 
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+## How It Works
 
-Freebies: <https://www.creative-tim.com/products>
+1. **Admin Workflow**:
+   - Log in to the admin dashboard.
+   - Add interviewees and generate unique Interview IDs.
+   - Define keywords, patterns, and questions for the chatbot.
+   - Review interview results and make hiring decisions.
 
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
+2. **Interviewee Workflow**:
+   - Enter the provided Interview ID.
+   - Participate in an AI-driven interview session.
+   - Await results and feedback from the admin.
 
-Social Media:
+---
 
-Twitter: <https://twitter.com/CreativeTim>
+## Limitations
 
-Facebook: <https://www.facebook.com/CreativeTim>
+1. **Initial Efficiency**: The system may not match human efficiency during early stages.
+2. **Accuracy Constraints**: AI algorithms may yield less accurate results compared to experienced interviewers.
+3. **Server Dependency**: Performance is influenced by server speed.
+4. **Security**: Interview recordings lack robust security mechanisms.
+5. **Extraordinary Scenarios**: Limited adaptability to unusual candidate interactions.
 
-Dribbble: <https://dribbble.com/creativetim>
+---
 
-Google+: <https://plus.google.com/+CreativetimPage>
+## Future Enhancements
 
-Instagram: <https://instagram.com/creativetimofficial>
+1. Pre-loaded keywords and patterns for better out-of-the-box accuracy.
+2. Deployment on a high-speed cloud server for improved security and scalability.
+3. Integration of advanced AI algorithms for enhanced performance.
+4. Expansion of Natural Language Processing (NLP) capabilities.
 
-[CHANGELOG]: ./CHANGELOG.md
+---
 
-[LICENSE]: ./LICENSE
+## Setup and Installation
 
-[version-badge]: https://img.shields.io/badge/version-1.4.0-blue.svg
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hannandesai/dike-chat-bot
+   cd dike-chat-bot
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run start
+   ```
